@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>竞赛信息网 - 全国大学生英语竞赛</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="layout/plugins/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="layout/style.css" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="layout/js/jquery.js"></script>
+
+<!-- PrettyPhoto start -->
+<link rel="stylesheet" href="layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+<!-- PrettyPhoto end -->
+
+<!-- jQuery tools start -->
+<script type="text/javascript" src="layout/plugins/tools/jquery.tools.min.js"></script>
+<!-- jQuery tools end -->
+
+<!-- Calendar start -->
+<link rel="stylesheet" href="layout/plugins/calendar/calendar.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/calendar/calendar.js"></script>
+<!-- Calendar end -->
+
+<!-- ScrollTo start -->
+<script type="text/javascript" src="layout/plugins/scrollto/jquery.scroll.to.min.js"></script>
+<!-- ScrollTo end -->
+
+<!-- MediaElements start -->
+<link rel="stylesheet" href="layout/plugins/video-audio/mediaelementplayer.css" />
+<script src="layout/plugins/video-audio/mediaelement-and-player.js"></script>
+<!-- MediaElements end -->
+
+<!-- FlexSlider start -->
+<link rel="stylesheet" href="layout/plugins/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- FlexSlider end -->
+
+<!-- iButtons start -->
+<link rel="stylesheet" href="layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/ibuttons/lib/jquery.ibutton.min.js"></script>
+<!-- iButtons end -->
+
+<!-- jQuery Form Plugin start -->
+<script type="text/javascript" src="layout/plugins/ajaxform/jquery.form.js"></script>
+<!-- jQuery Form Plugin end -->
+
+<script type="text/javascript" src="layout/js/main.js"></script>
+<script type="text/javascript">
+	jQuery(function () {
+	});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div class="wrapper sticky_footer"> 
+  <!-- HEADER BEGIN -->
+  <header>
+    <div id="header">
+      <section class="top">
+        <div class="inner">
+          <div class="fr">
+            <div class="block_top_menu">
+              <ul>
+                <li class="current">
+                  <div align="right"><a href="#login" class="open_popup">登陆</a></div>
+                </li>
+                <script language="javascript">
+									function zhuxiao()
+										{
+											if (confirm("确定要注销吗？")){
+												alert("已注销。")}
+											else{
+												alert("未注销。")}
+										}
+									</script>
+                <li>
+                  <div align="right"><a href="#" onClick="zhuxiao()">注销</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="inner">
+          <div id="logo_top"><a href="index.html"><img src="images/logo_top.png" alt="BusinessNews" title="竞赛信息网" /></a></div>
+          <div class="block_today_date">
+            <div class="num">
+              <p id="num_top" />
+            </div>
+            <div class="other">
+              <p class="month_year"><span id="month_top"></span>, <span id="year_top"></span></p>
+              <p id="day_top" class="day" />
+            </div>
+          </div>
+          <div class="fr">
+            <div class="block_languages">
+              <div class="clearboth"></div>
+            </div>
+            <div class="block_search_top">
+              <form action="#" >
+                <div class="field">
+                  <input type="text" class="w_def_text" title="输入你想搜索的内容" />
+                </div>
+                <input type="submit" class="button" value="Search" />
+                <div class="clearboth"></div>
+              </form>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="section_main_menu">
+        <div class="inner">
+          <nav class="main_menu">
+            <ul>
+              <li><a href="index.html">主页</a>
+              <li class="big_dropdown" data-content="technology"><a href="#">公益征集</a></li>
+              </li>
+              <li class="current_page_item"><a href="c_computer.html">比赛信息</a></li>
+              <li><a href="blog.html">比赛论坛</a> 
+                <!-- <ul>
+                  <li><a href="#">关于论坛</a></li>
+                  <li><a href="#">作者介绍</a></li>
+                  <li><a href="#">联系我们</a></li>
+                  <li><a href="#">注册页面</a></li>
+                  <li><a href="#">新的页面</a></li>
+                  <li><a href="#">图文竞赛帖子</a></li>
+                  <li><a href="#">音频竞赛帖子</a></li>
+                </ul>--> 
+              </li>
+              <li><a href="typography.html">关于我们</a>
+                <ul>
+                  <li><a href="accordion.html">更多信息</a></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li><a href="pricing_table.html">会员充值</a></li>
+                  <li><a href="testimonials.html">励志标语</a></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li><a href="buttons.html">标签格式</a></li>
+                  <li><a href="video.html">视频&amp;音频</a></li>
+                  <li></li>
+                </ul>
+              </li>
+              <li ><a href="#">加入我们</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="section_big_dropdown">
+        <div class="inner">
+          <div class="block_big_dropdown" data-menu="technology">
+            <div class="content">
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_5.jpg" alt="" /></a>
+                <p><a href="#">这里有正在报名的志愿活动。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_6.jpg" alt="" /></a>
+                <p><a href="#">这里有完美闭幕的活动集锦。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="popular_posts">
+                <div class="title">
+                  <p>志愿者招募令</p>
+                </div>
+                <ul>
+                  <li><a href="#"><span>01 July, 2019</span>金熊猫全球创新创业大赛志愿者招募！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>澳大利亚华人总工会招募线上英文志愿者招募！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019第七届#乌镇戏剧节#志愿者招募！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019大学生志愿服务西部计划正式招募！</a></li>
+                </ul>
+              </div>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+          <div class="block_big_dropdown" data-menu="education">
+            <div class="content">
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_1.jpg" alt="" /></a>
+                <p><a href="#">这里有大学生2019年暑期实习生招募。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_2.jpg" alt="" /></a>
+                <p><a href="#">这里有大学生2019年青年实践活动发布。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="popular_posts">
+                <div class="title">
+                  <p>青年实践</p>
+                </div>
+                <ul>
+                  <li><a href="#"><span>01 July, 2019</span>平安银行2020届培训生招聘来袭！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>vivo2020校园招聘提前批ET计划全面启动！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>中国联通2019年招募火热进行中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>上海法学研究生2019年暑期夏令营开幕！</a></li>
+                </ul>
+              </div>
+              <div class="line"></div>
+              <div class="more">
+                <div class="title">
+                  <p>更多教育板块</p>
+                </div>
+                <ul>
+                  <li><a href="#">高中</a></li>
+                  <li><a href="#">大学</a></li>
+                  <li><a href="#">社团</a></li>
+                  <li><a href="#">学生</a></li>
+                </ul>
+              </div>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section_secondary_menu">
+        <div class="inner">
+          <nav class="secondary_menu">
+            <ul>
+              <li><a href="c_computer.html">计算机</a></li>
+              <li><a href="c_literature.html">文学</a></li>
+              <li><a href="c_math.html">数学</a></li>
+              <li><a href="#">英语</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- HEADER END --> 
+  
+
+<!-- CONTENT BEGIN -->
+  <div id="content" class="right_sidebar">
+   <div class="inner">
+  <div class="general_content">
+   <div class="main_content">
+    <div class="block_breadcrumbs">
+     <div class="text"><p>您的位置:</p ></div>
+                 <ul>
+                  <li data_temp_dwid="1"><a href="c_computer.html" data_temp_dwid="2">比赛信息</a></li>
+                  <li><a href="c_english.html">英语</a></li>
+                  <li>2019年第二届“普译奖”全国大学生英语写作大赛</li>
+                   </ul>
+               </div>
+                 <div class="separator" style="height:30px;"></div>
+                 <article class="block_single_news">
+                  <div class="f_pic"><a href="#"><img src="images/c_en_fzy_2_p1.jpg" height="259" width="610" alt=""/></a></div>
+                    <p class="title"><a href="#">2019年第二届“普译奖”全国大学生英语写作大赛</a></p >
+                    <p class="subtitle"><strong>摘要</strong> 本科生组报名截止日期：11月5日 || 高职高专组报名截止日期：10月25日 || 主办单位：《海外英语》杂志 ||联合主办单位：我爱竞赛网、172校园活动网 ||一、大赛前言为贯彻《教育部关于全面提高高等教育质量的若干意见 ...</p >
+                     <div class="content">
+                    <p><strong>一、大赛前言</strong><br>为贯彻《教育部关于全面提高高等教育质量的若干意见》，配合《中国英语能力等级量表》的实施和推广，以语言应用为导向，为大学生提供展示英语应用能力平台，激发大学生学习英语的积极性。“普译奖”作为外语类品牌赛事，已成功举办三届“普译奖”全国大学生翻译比赛及一届全国大学生英语写作大赛，吸引全国1000多所高校近20万人参加，受到各高校及英语研习机构的广泛好评。现在此基础上由《海外英语》杂志联合我爱竞赛网、172校园活动网及各高校外语研究机构共同主办2019年第二届“普译奖”全国大学生英语写作大赛。</p >
+					   <p><strong>二、组织机构</strong><br>组织单位：“普译奖”活动组委会<br>主办单位：《海外英语》杂志<br>联合主办单位：我爱竞赛网、172校园活动网<br>本科高校组协办单位：江苏师范大学外国语学院时代先锋志愿者服务队、南京航空航天大学英语爱好者协会、中北大学polly口语社、山东财经大学英语联合会、兰州理工大学英语协会等<br>高职高专组协办单位：辽宁铁道职业技术学院英语协会、甘肃林业职业技术学院社团联合会、漳州理工职业学院等</p >
+                     <p><strong>三、大赛时间<br></strong>本科生组：2019年9月5日——12月31日<br>高职高专组：2019年9月5日——11月30日</p >
+                     <p><strong>四、大赛对象<br></strong>本科生组：<br>全国各高等院校本科生<br>高职高专组：<br>全国各高等职业院校在校生、各高等专科学校在校生、本科院校高职学院在校生</p >
+                     <p><strong>五、大赛流程</strong><br>1、联合主办单位征集： 2019年9月5日—10月20日<br>说明：本科组联合主办单位计划招募综合大学或外语类院校单位不超过20个，高职高专组计划招募高职院校单位不超过10个。各校团委、学生会、英语类协会社团组织均可申请，需签署盖章文件。<br>2、初赛报名：<br>本科生组：2019年9月5日—11月5日 参赛者登录官网获取作文题目。<br>高职高专组：2019年9月5日—10月25日 参赛者登录官网获取作文题目。<br>3、初赛结果公示：<br>本科生组：2019年12月2日<br>高职高专组：2019年11月6日<br>4、决赛报名：本科生组：2019年12月2日—12月7日<br>高职高专组：2019年11月6日-11月9日<br>5、全国决赛：<br>本科生组：2019年12月7日（周六）上午10：00~12：00 报名决赛的同学登录官网在线参加决赛。<br>高职高专组：2019年11月9日（周六）上午10：00~12：00 报名决赛的同学登录官网在线参加决赛。 <br>6、全国决赛结果公示：<br>本科生组：2019年12月30日<br>高职高专组：2019年11月25日 <br>7、奖项颁发：<br>本科生组：2019年12月31日后<br>高职高专组：2019年11月25日后</p >
+                     <p><strong>六、大赛说明： <br>
+                     </strong>1、初赛、决赛报名：大赛官网报名<a href="http://py.52jingsai.com/" target="_blank" data-cke-saved-href="http://py.52jingsai.com/">http://py.52jingsai.com/</a> <br>
+                     2、初赛： <br>
+                     本科生组：2019年9月5日—11月5日<br>
+                     高职高专组：2019年9月5日—10月25日<br>
+                     初赛为线上写作，参赛选手在官网注册后即可查看作文题目，且须在初赛结束时间前（本科生组11月5日17时，高职高专组10月25日17时）提交，初赛结束之前均可修改。<br>
+                     初赛赛题由组委会提供，两组作文题目不同，要求本科生组作文全文300词左右为宜，高职高专组提交作文全文200词左右为宜。<br>
+                     3、决赛： <br>
+                     本科生组：2019年12月7日（周六）上午10：00~12：00 <br>
+                     高职高专组：2019年11月9日（周六）上午10：00~12：00 <br>
+                     报名决赛的同学在指定时间登录官网在线参加决赛，决赛时间为2小时。<br>
+                     决赛赛题由组委会提供，两组作文题目不同，要求本科生组作文全文350-400词为宜，高职高专组提交作文全文250-300词为宜。</p >
+                     <p><strong>七、奖项设置<br>
+                     </strong>1、初赛评奖<br>
+                     优秀奖：约占该组别全部参赛人数的前40%，为初赛优秀奖，并获得参加决赛资格；所有初赛获奖选手将获得由大赛组委会颁发的电子版荣誉证书。<br>
+                     2、决赛评奖   本科生组：<br>
+                        特等奖       5名                   荣誉证书+奖杯<br>
+                        一等奖   决赛参赛人数的5%          荣誉证书+奖章<br>
+                        二等奖   决赛参赛人数的15%         荣誉证书<br>
+                        三等奖   决赛参赛人数的20%         荣誉证书<br>
+                        优秀奖   不超过决赛参赛人数的30%   荣誉证书<br>
+                        高职高专组：<br>
+                        特等奖       5名                   荣誉证书+奖杯<br>
+                        一等奖   决赛参赛人数的5%          荣誉证书+奖章<br>
+                        二等奖   决赛参赛人数的15%         荣誉证书<br>
+                        三等奖   决赛参赛人数的20%         荣誉证书<br>
+                        优秀奖   不超过决赛参赛人数的30%   荣誉证书<br>
+                     说明：以上奖项依据组别颁奖，组委会将在奖项评定出来后10个工作日内，将决赛各奖项证书等统一邮寄给获奖者或本校联合主办单位负责人，不收取任何费用。</p >
+                     <p><br>
+                     <strong>八、联系我们<br>
+                     </strong>1、大赛官网：<a href="http://py.52jingsai.com/" target="_blank" data-cke-saved-href="http://py.52jingsai.com/">http://py.52jingsai.com/</a><br>
+                     2、比赛咨询：<br>
+                     QQ1：2807394467 （个人参赛咨询）<br>
+                     QQ2： 2765208071（联合主办单位咨询） <br>
+                     比赛官方通知群：<a href="https://jq.qq.com/?_wv=1027&k=5gTWa60" target="_blank" data-cke-saved-href="https://jq.qq.com/?_wv=1027&k=5gTWa60">743508201</a></p >
+                     <div></div>
+                     <p>3、比赛合作：<br>
+                     联系人：龙老师<br>
+                     联系电话：17333270604<br>
+                     联系QQ：2765208071</p>
+                     <p>&nbsp;</p>
+                     <div><strong>九、其他说明<br>
+                       </strong>1、本次大赛初赛为免费参加，决赛收取报名费30元/人（组织与评审费用）。<br>
+                       2、本次大赛所有投稿作品著作权归原作者所有；参赛作品版权归大赛组委会所有。<br>
+                       3、参赛选手应秉持诚信态度，保证作文为本人原创，不得抄袭、作弊。如经组委会查实有抄袭或作弊情况，将取消该选手参赛资格。<br>
+                       4、决赛等级奖获奖作品，优先推荐在《海外英语》系列刊物发表。<br>
+                       5、如因不可抗力因素造成赛事无法继续进行，大赛将自行终止。大赛组委会拥有大赛活动的最终解释权。</div>
+                     <br>
+                     <p>&nbsp; </p >
+					<p>&nbsp;</p >	 
+                   </div>
+                  </article>
+                 <div class="block_post_tags">
+                  <p>标签: <a href="#">英语</ a>< a href="#">实验</a></p >
+                 </div>
+<!-- CONTENT END --> 
+
+<!-- FOOTER BEGIN -->
+<footer>
+  <div id="footer">
+    <div class="inner">
+      <div id="logo_bottom"><a href="index.html"><img src="images/logo_bottom.png" alt="" /></a></div>
+      <div class="block_to_top"> <a href="#">返回顶部</a></div>
+    </div>
+  </div>
+</footer>
+<!-- FOOTER END --> 
+<!-- POPUP BEGIN -->
+</body>
+</html>
+
+
+
+

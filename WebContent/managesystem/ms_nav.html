@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CompetitionNews后台管理系统</title>
+<style>
+.nav {
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 60px;
+	width: 20%;
+	border-right: #9B9B9B 3px solid;
+	float: left;
+}
+li {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+.content1 {
+	float: right;
+	width: 75%;
+	height: 700px;
+	background-color: white;
+}
+.snav li {
+	float: left;
+	margin: 10px;
+}
+.snav {
+	font-weight: bold;
+	height: 50px;
+}
+.content2 {
+	margin: 20px;
+	padding: 10px;
+	border: #8A8A8A solid 2px
+}
+input {
+	font-size: 15px;
+	line-height: 20px;
+}
+.i1 {
+	font-weight: bold;
+	letter-spacing: 3px;
+	padding: 10px 15px;
+	/*margin: 0 100px 0 20px;*/
+	border: #24B9CE solid 1px;
+	color: #24b9ce;
+	background-color: white
+}
+.content3 li {
+	height: 50px;
+	border: grey 1px solid;
+	padding-left: 20px
+}
+.content3 li a {
+	font-size: 15px;
+	line-height: 40px;
+}
+.content3 li a:hover {
+	color: blue
+}
+.lt1 li {
+	height: 60px;
+	border-bottom: grey solid 1px;
+}
+.lt1 li a {
+	margin-left: 30px
+}
+	.lt2{
+		background-color: #2ab9ce;
+		border:#8a8a8a solid 2px;
+		border-right: 0
+	}
+.btn1 {
+	margin: 0 20px;
+	font-weight: bold;
+}
+</style>
+</head>
+
+<body bgcolor="#DDF5FA">
+	                <script language="javascript">
+									function zhuxiao()
+										{
+											if (confirm("确定要注销吗？")){
+												alert("已注销。");
+											window.location.href="login/lo_gin.html";}
+											else{
+												alert("未注销。")}
+										}
+									</script>
+<div style="float: right"> 欢迎您，管理员。 <a href="#" class="btn1" onClick="zhuxiao()">注销</a></div>
+<header style="margin-top: 40px;margin-left: 20px;margin-bottom: 50px;"><img src="../images/ms_logo.png" alt="" style="height: 40px"/> <span style="font-size: 30px;vertical-align: top">后台管理系统</span> </header>
+<div class="nav">
+  <ul class="lt1">
+    <li class="lt2"><a href="ms_nav.html">导航栏管理</a></li>
+    <li><a href="ms_cts.html">内容管理</a></li>
+    <li><a href="ms_docs.html">文件管理</a></li>
+    <li><a href="ms_vip.html">会员管理</a></li>
+  </ul>
+</div>
+<div class="content1">
+  <div class="snav">
+    <ul>
+      <li><a href="ms_index.html">首页</a></li>
+      <li><a href="ms_adm.html">用户管理</a></li>
+    </ul>
+  </div>
+  <hr>
+  <div class="content2">
+    <div style="margin-left: 30px">
+      <h2>所有导航栏</h2>
+      <form>
+        <input type="button" value="添加" class="i1" 
+			 style="background: #24b9c3; 
+					color: white;
+					margin-right: 75px">
+        <input type="text" size="20" class="i1" >
+        <input type="button" value="搜索" class="i1">
+      </form>
+    </div>
+    <div style="margin-top: 50px;">
+      <ul class="content3">
+        <li><a href="#">内容1</a></li>
+        <li><a href="#">内容2</a></li>
+        <li><a href="#">内容3</a></li>
+        <li><a href="#">内容4</a></li>
+        <li><a href="#">内容5</a></li>
+        <li><a href="#">内容6</a></li>
+        <li><a href="#">内容7</a></li>
+        <li><a href="#">内容8</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<!-- 定义数据源 -->
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<!-- 驱动 -->
+		<property name="driverClassName"
+			value="com.microsoft.sqlserver.jdbc.SQLServerDriver"></property>
+		<!-- url -->
+		<property name="url"
+			value="jdbc:sqlserver://192.168.100.172:1433;DatabaseName=group8201;"></property>
+		<!-- 用户名 -->
+		<property name="username" value="sa"></property>
+		<!-- 密码 -->
+		<property name="password" value="Ishang123"></property>
+	</bean>
+
+	<!-- 定义SessionFactory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- 数据源 -->
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<!-- 配置数据库的方言 不同的数据库，在Sql语句的设计上是存在差异的 Hibernate就相当于一个翻译，配置“方言”选项，就是告诉Hibernate它要说哪里的方言。 -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>base/pojo/User.hbm.xml</value>
+				<value>base/pojo/Admin.hbm.xml</value>
+				<value>base/pojo/BBS_Posts.hbm.xml</value>
+				<value>base/pojo/Comment.hbm.xml</value>
+				<value>base/pojo/Competition_Info.hbm.xml</value>
+				<value>base/pojo/Competition_Type.hbm.xml</value>
+				<value>base/pojo/Volunteer_Info.hbm.xml</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- 定义hibernateTemplate模板 -->
+	<bean id="hibernateTemplate"
+		class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory"></ref>
+		</property>
+	</bean>
+
+	<!-- 前台用户User -->
+	<bean id="userDao" class="base.dao.impl.UserDaoImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+
+	<bean id="userService" class="base.service.LoginCheck">
+		<property name="dao" ref="userDao"></property>
+	</bean>
+
+
+	<bean id="userAction" class="web.controller.UserAction">
+		<property name="service" ref="userService"></property>
+	</bean>
+
+	<!-- 后台管理员Admin -->
+	<bean id="adminDao" class="base.dao.impl.AdminDaoImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+
+	<bean id="adminService" class="base.service.BackLoginCheck">
+		<property name="dao" ref="adminDao"></property>
+	</bean>
+
+	<bean id="adminAction" class="web.controller.AdminAction">
+		<property name="service" ref="adminService"></property>
+	</bean>
+
+	<!-- 论坛BBS -->
+	<bean id="bbsDao" class="base.dao.impl.BBS_PostsDaoImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+	<bean id="bbsService" class="base.service.BBS_post_service">
+		<property name="dao" ref="bbsDao"></property>
+	</bean>
+
+	<bean id="bbsAction" class="web.controller.BBSaction">
+		<property name="userservice" ref="userService"></property>
+		<property name="service" ref="bbsService"></property>
+	</bean>
+
+	<!-- BBS评论 -->
+	<bean id="cmtDao" class="base.dao.impl.BBS_CommentDaoImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+
+	<bean id="cmtService" class="base.service.BBS_Comment_service">
+		<property name="dao" ref="cmtDao"></property>
+	</bean>
+
+	<bean id="cmtAction" class="web.controller.BBSCommentAction">
+		<property name="service" ref="cmtService"></property>
+	</bean>
+
+	<!-- 赛事详情 -->
+	<bean id="cinfoDao" class="base.dao.impl.Competition_InfoDaoImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+
+	<bean id="cinfoService"
+		class="base.service.Competition_info_service">
+		<property name="dao" ref="cinfoDao"></property>
+	</bean>
+
+	<bean id="cinfoAction"
+		class="web.controller.CompetitionInfoAction">
+		<property name="service" ref="cinfoService"></property>
+		<property name="typedao" ref="typeDao"></property>
+	</bean>
+
+	<!-- 赛事类别 -->
+	<bean id="typeDao" class="base.dao.impl.Competition_TypeDaoImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+
+	<!-- 志愿信息 -->
+	<bean id="volunDao" class="base.dao.impl.Volunteer_InfoDaoImpl">
+		<property name="hibernateTemplate">
+			<ref bean="hibernateTemplate" />
+		</property>
+	</bean>
+
+	<bean id="volunService" class="base.service.VolunteerCheck">
+		<property name="dao" ref="volunDao"></property>
+	</bean>
+
+	<bean id="volunAction" class="web.controller.VolunteerAction">
+		<property name="service" ref="volunService"></property>
+	</bean>
+</beans>

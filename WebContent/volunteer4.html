@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BusinessNews - Our Blog - Blog Name</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="layout/plugins/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="layout/style.css" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="layout/js/jquery.js"></script>
+
+<!-- PrettyPhoto start -->
+<link rel="stylesheet" href="layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+<!-- PrettyPhoto end -->
+
+<!-- jQuery tools start -->
+<script type="text/javascript" src="layout/plugins/tools/jquery.tools.min.js"></script>
+<!-- jQuery tools end -->
+
+<!-- Calendar start -->
+<link rel="stylesheet" href="layout/plugins/calendar/calendar.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/calendar/calendar.js"></script>
+<!-- Calendar end -->
+
+<!-- ScrollTo start -->
+<script type="text/javascript" src="layout/plugins/scrollto/jquery.scroll.to.min.js"></script>
+<!-- ScrollTo end -->
+
+<!-- MediaElements start -->
+<link rel="stylesheet" href="layout/plugins/video-audio/mediaelementplayer.css" />
+<script src="layout/plugins/video-audio/mediaelement-and-player.js"></script>
+<!-- MediaElements end -->
+
+<!-- FlexSlider start -->
+<link rel="stylesheet" href="layout/plugins/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- FlexSlider end -->
+
+<!-- iButtons start -->
+<link rel="stylesheet" href="layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/ibuttons/lib/jquery.ibutton.min.js"></script>
+<!-- iButtons end -->
+
+<!-- jQuery Form Plugin start -->
+<script type="text/javascript" src="layout/plugins/ajaxform/jquery.form.js"></script>
+<!-- jQuery Form Plugin end -->
+
+<script type="text/javascript" src="layout/js/main.js"></script>
+<script type="text/javascript">
+	jQuery(function () {
+	});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div class="wrapper sticky_footer"> 
+  <!-- HEADER BEGIN -->
+  <header>
+    <div id="header">
+      <section class="top">
+        <div class="inner">
+          <div class="fr">
+            <div class="block_top_menu">
+              <ul>
+                <li class="current">
+                  <div align="right"><a href="#login" class="open_popup">登陆</a></div>
+                </li>
+                <script language="javascript">
+									function zhuxiao()
+										{
+											if (confirm("确定要注销吗？")){
+												alert("已注销。")}
+											else{
+												alert("未注销。")}
+										}
+									</script>
+                <li>
+                  <div align="right"><a href="#" onClick="zhuxiao()">注销</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="inner">
+          <div id="logo_top"><a href="index.html"><img src="images/logo_top.png" alt="BusinessNews" title="竞赛信息网" /></a></div>
+          <div class="block_today_date">
+            <div class="num">
+              <p id="num_top" />
+            </div>
+            <div class="other">
+              <p class="month_year"><span id="month_top"></span>, <span id="year_top"></span></p>
+              <p id="day_top" class="day" />
+            </div>
+          </div>
+          <div class="fr">
+            <div class="block_languages">
+              <div class="clearboth"></div>
+            </div>
+            <div class="block_search_top">
+              <form action="#" >
+                <div class="field">
+                  <input type="text" class="w_def_text" title="输入你想搜索的内容" />
+                </div>
+                <input type="submit" class="button" value="Search" />
+                <div class="clearboth"></div>
+              </form>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="section_main_menu">
+        <div class="inner">
+          <nav class="main_menu">
+            <ul>
+              <li><a href="index.html">主页</a>
+              <li class="current_page_item"><a href="#">公益征集</a></li>
+              </li>
+              <li class="big_dropdown" data-content="business"><a href="c_computer.html">比赛信息</a></li>
+              <li><a href="blog.html">比赛论坛</a> </li>
+              <li><a href="typography.html">关于我们</a>
+                <ul>
+                  <li><a href="accordion.html">更多信息</a></li>
+                  <li><a href="pricing_table.html">会员充值</a></li>
+                  <li><a href="testimonials.html">励志标语</a></li>
+                </ul>
+              </li>
+              <li ><a href="contact.html">加入我们</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="section_big_dropdown">
+        <div class="inner">
+          <div class="block_big_dropdown" data-menu="business">
+            <div class="content">
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_3.jpg" alt="" /></a>
+                <p><a href="#">这里是火热报名中的竞赛活动。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_4.jpg" alt="" /></a>
+                <p><a href="#">这里是快速提升学科素养的通道。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="popular_posts">
+                <div class="title">
+                  <p>商业创业</p>
+                </div>
+                <ul>
+                  <li><a href="#"><span>01 July, 2019</span>2019第八届金程杯全国微课大赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>“长沙银行杯”2019年湖南省创新创业大赛和创新挑战赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+                </ul>
+              </div>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- HEADER END --> 
+  
+  <!-- CONTENT BEGIN -->
+  <div id="content" class="right_sidebar">
+    <div class="inner">
+      <div class="general_content">
+        <div class="main_content">
+          <div class="block_breadcrumbs">
+            <div class="text">
+              <p>您的位置：</p>
+            </div>
+            <ul>
+              <li><a href="index.html">公益征集</a></li>
+              <li>2019年全国高校计算机能力挑战赛宣传志愿者招募</li>
+            </ul>
+          </div>
+          <div class="separator" style="height:30px;"></div>
+          <article class="block_single_post">
+            <div class="f_pic">
+              <li><img src="images/pic_blog_1_4.jpg" alt="" /></li>
+              <script type="text/javascript">
+									$(window).load(function() {
+										$('#post_slider').flexslider({
+											animation : 'fade',
+											controlNav : true,
+											directionNav : true,
+											animationLoop : true,
+											slideshow : false
+										});
+									});
+								</script> 
+            </div>
+            <p class="title"><a href="#">志愿者招募 | 2019年全国高校计算机能力挑战赛宣传志愿者招募</a></p>
+            <p class="subtitle"><strong>摘要</strong>: 招募组织：2019年全国高校计算机能力挑战赛组委会（主办单位：全国高等学校计算机教育研究会）报名截止日期：2019年11月15日一、大赛背景为贯彻落实习近平主席在十九大报告中关于&ldquo;推动互联网、大数据、人工智能和实 ...</p>
+            <div class="info">
+              <div class="date">
+                <p>15 July, 2012</p>
+              </div>
+              <div class="author">
+                <p>By: <a href="#">John Doe</a></p>
+              </div>
+              <div class="r_part">
+                <div class="category">
+                  <p>category: <a href="#">BUSINESS</a></p>
+                </div>
+                <a href="#" class="views">650</a> <a href="#" class="comments">25</a> </div>
+            </div>
+            <div class="content">
+              <p>为贯彻落实习近平主席在十九大报告中关于&ldquo;推动互联网、大数据、人工智能和实体经济深度融合&rdquo;以及&ldquo;善于运用互联网技术和信息化手段开展工作&rdquo;等讲话精神，引导高校在校生学习掌握计算机与互联网知识，提高计算机应用能力、解决问题能力以及创新创业能力，为未来求职就业和生活学习打下坚实的技能基础，推动各高等院校计算机教育教学改革与创新。经研究，全国高等学校计算机教育研究会决定举办2019年全国高校计算机能力挑战赛（以下简称挑战赛）。</p>
+              <blockquote class="full">
+                <p><b>招募截止时间：</b>2019年11月15日 </p>
+              </blockquote>
+              <p>1.用各自的大赛专属链接在各线上及线下宣传比赛；<br>
+                2.参与大赛运营各环节的测试与反馈；<br>
+                3.收集参赛者者在参赛过程中遇到的各种问题并及时反馈；<br>
+                4.协助组委会考察线下赛点；<br>
+                5.协办发放大赛物资与证书。</p>
+              <div class="separator" style="height:4px;"></div>
+              <h6>报名须知</h6>
+              <div class="separator" style="height:4px;"></div>
+              <a href="#" class="pic w_frame alignleft"><img src="images/pic_blog_post_2.jpg" alt="" /></a>
+              <p>主办单位：全国高等学校计算机教育研究会</p>
+              <p>&nbsp;</p>
+              <p>协办单位：安徽省高等学校计算机教育研究会、DataCastle数据城堡、《软件导刊》杂志社、青蓝学院</p>
+              <p><br>
+                承办单位：各高校计算机相关院系、我爱竞赛网</p>
+              <p>招募对象为已报名挑战赛的参赛者；招募截止时间为2019年11月15日。登录官网<a href="http://www.ncccu.org.cn/" target="_blank" data-cke-saved-href="http://www.ncccu.org.cn" class="lnk_blue">http://www.ncccu.org.cn</a>  ，报名志愿者，审核通过后将获得专属链接及大赛宣传海报。QQ群：<a href="https://jq.qq.com/?_wv=1027&k=51wBBAE" target="_blank" data-cke-saved-href="https://jq.qq.com/?_wv=1027&k=51wBBAE" class="lnk_blue">771836389</a>（加群请备注学校+姓名）<br>
+              </p>
+            </div>
+            <div class="line_3" style="margin:4px 0px 23px;"></div>
+            <div class="about_author">
+              <h4>About the Author</h4>
+              <div class="photo"><a href="#"><img src="images/ava_default_3.jpg" alt="" /></a></div>
+              <div class="bio">
+                <p class="name"><a href="#">Roman Polyarush</a></p>
+                <p>Fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution.</p>
+              </div>
+              <div class="clearboth"></div>
+            </div>
+            <div class="line_3" style="margin:17px 0px 23px;"></div>
+          </article>
+          <div class="block_post_tags">
+            <p>Tags: <a href="#">business,</a><a href="#">stock market</a></p>
+          </div>
+          <div class="block_post_social">
+            <h4><span>B</span></h4>
+            <section class="rating">
+              <p class="title"><span>Rating</span></p>
+              <ul>
+                <li><span>1024</span>views</li>
+                <li><span>4</span>comments</li>
+              </ul>
+            </section>
+            <section class="subscribe">
+              <p class="title"><span>Subscribe</span></p>
+              <a href="#">Subscribe to comments</a> </section>
+            <section class="recommend">
+              <p class="title"><span>recommend to friends</span></p>
+              <ul>
+                <li><a href="http://www.facebook.com/share.php?u=http://google.com" target="_blank"><img src="images/button_social_1.png" alt="" /></a></li>
+                <li><a href="https://twitter.com/share?text=I like BusinessNews Template and You?" target="_blank"><img src="images/button_social_2.png" alt="" /></a></li>
+                <li><a href="https://plusone.google.com/_/+1/confirm?url=http://google.com" target="_blank"><img src="images/button_social_3.png" alt="" /></a></li>
+                <li><a href="http://pinterest.com/pin/create/button/?url=http://google.com" target="_blank"><img src="images/button_social_4.png" alt="" /></a></li>
+              </ul>
+            </section>
+            <div class="clearboth"></div>
+          </div>
+          <div class="line_2" style="margin:22px 0px 29px;"></div>
+          <div class="block_related_posts">
+            <h3>Related Posts</h3>
+            <div class="block_main_news">
+              <article class="block_news_post">
+                <div class="f_pic"><a href="news_post.html" class="general_pic_hover scale_small"><img src="images/pic_main_news_6.jpg" alt="" /></a></div>
+                <p class="category"><a href="#">photography</a></p>
+                <p class="title"><a href="news_post.html">Many desktop publishing packages and web page editors.</a></p>
+                <div class="info">
+                  <div class="date">
+                    <p>11 July, 2012</p>
+                  </div>
+                  <a href="#" class="views">183</a>
+                  <div class="clearboth"></div>
+                </div>
+              </article>
+              <article class="block_news_post">
+                <div class="f_pic"><a href="news_post.html" class="general_pic_hover scale_small"><img src="images/pic_main_news_8.jpg" alt="" /></a></div>
+                <p class="category"><a href="#">sport</a></p>
+                <p class="title"><a href="news_post.html">Many desktop publishing packages and web page editors.</a></p>
+                <div class="info">
+                  <div class="date">
+                    <p>11 July, 2012</p>
+                  </div>
+                  <a href="#" class="views">183</a>
+                  <div class="clearboth"></div>
+                </div>
+              </article>
+              <article class="block_news_post">
+                <div class="f_pic"><a href="news_post.html" class="general_pic_hover scale_small"><img src="images/pic_main_news_16.jpg" alt="" /></a></div>
+                <p class="category"><a href="#">business</a></p>
+                <p class="title"><a href="news_post.html">Many desktop publishing packages and web page editors.</a></p>
+                <div class="info">
+                  <div class="date">
+                    <p>11 July, 2012</p>
+                  </div>
+                  <a href="#" class="views">183</a>
+                  <div class="clearboth"></div>
+                </div>
+              </article>
+              <article class="block_news_post">
+                <div class="f_pic"><a href="news_post.html" class="general_pic_hover scale_small"><img src="images/pic_main_news_4.jpg" alt="" /></a></div>
+                <p class="category"><a href="#">video</a></p>
+                <p class="title"><a href="news_post.html">Many desktop publishing packages and web page editors.</a></p>
+                <div class="info">
+                  <div class="date">
+                    <p>11 July, 2012</p>
+                  </div>
+                  <a href="#" class="views">183</a>
+                  <div class="clearboth"></div>
+                </div>
+              </article>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+          <div class="line_2" style="margin:5px 0px 28px;"></div>
+          <div class="block_comments">
+            <h2>4 Comments</h2>
+            <div class="comment">
+              <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+              <div class="content">
+                <p class="name"><a href="#">John Doe</a></p>
+                <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                <p class="text">Established fact that a reader will be distracted by the readable content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+              </div>
+              <div class="clearboth"></div>
+              <div class="line_3"></div>
+            </div>
+            <div class="comment">
+              <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+              <div class="content">
+                <p class="name"><a href="#">Sara Gordon</a></p>
+                <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                <p class="text">Distracted by the readable content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</p>
+              </div>
+              <div class="clearboth"></div>
+              <div class="line_3"></div>
+              <div class="comment">
+                <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+                <div class="content">
+                  <p class="name"><a href="#">Alan Foylee</a></p>
+                  <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                  <p class="text">Content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="clearboth"></div>
+                <div class="line_3"></div>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+              <div class="content">
+                <p class="name"><a href="#">Matilda King</a></p>
+                <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                <p class="text">Established fact that a reader will be distracted by the readable content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+              </div>
+              <div class="clearboth"></div>
+              <div class="line_3"></div>
+            </div>
+          </div>
+          <div class="separator" style="height:30px;"></div>
+          <div class="block_leave_reply">
+            <h3>Leave a Reply</h3>
+            <p class="text">Your email address will not be published. Required fields are marked <span>*</span></p>
+            <form class="w_validation" action="#" />
+            
+            <p>Name<span>*</span></p>
+            <div class="field">
+              <input type="text" class="req" />
+            </div>
+            <p>E-mail<span>*</span></p>
+            <div class="field">
+              <input type="text" class="req" />
+            </div>
+            <p>Comment</p>
+            <div class="textarea">
+              <textarea cols="1" rows="1"></textarea>
+            </div>
+            <input type="submit" class="general_button" value="Post comment" />
+            </form>
+          </div>
+        </div>
+        <div class="sidebar">
+          <div class="block_subscribes_sidebar">
+            <div class="service"> <a href="#" class="rss"> <span class="num">11 234</span> <span class="people">Subscribers</span> </a> </div>
+            <div class="service"> <a href="#" class="tw"> <span class="num">781</span> <span class="people">Followers</span> </a> </div>
+            <div class="service"> <a href="#" class="fb"> <span class="num">341</span> <span class="people">Subscribers</span> </a> </div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_popular_posts">
+            <h4>Popular Posts</h4>
+            <div class="article">
+              <div class="pic"> <a href="#" class="w_hover"> <img src="images/pic_popular_post_1.jpg" alt="" /> <span></span> </a> </div>
+              <div class="text">
+                <p class="title"><a href="#">Packages and web page editors their default text.</a></p>
+                <div class="date">
+                  <p>11 July, 2012</p>
+                </div>
+                <div class="icons">
+                  <ul>
+                    <li><a href="#" class="views">41</a></li>
+                    <li><a href="#" class="comments">22</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line_3"></div>
+            <div class="article">
+              <div class="pic"> <a href="#" class="w_hover"> <img src="images/pic_popular_post_2.jpg" alt="" /> <span></span> </a> </div>
+              <div class="text">
+                <p class="title"><a href="#">Web page editors their default model text, and a search for.</a></p>
+                <div class="date">
+                  <p>07 July, 2012</p>
+                </div>
+                <div class="icons">
+                  <ul>
+                    <li><a href="#" class="views">24</a></li>
+                    <li><a href="#" class="comments">16</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line_3"></div>
+            <div class="article">
+              <div class="pic"> <a href="#" class="w_hover"> <img src="images/pic_popular_post_3.jpg" alt="" /> <span></span> </a> </div>
+              <div class="text">
+                <p class="title"><a href="#">Editors their default model text, and a search uncover.</a></p>
+                <div class="date">
+                  <p>05 July, 2012</p>
+                </div>
+                <div class="icons">
+                  <ul>
+                    <li><a href="#" class="views">33</a></li>
+                    <li><a href="#" class="comments">25</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_popular_stuff">
+            <h4>Popular Video</h4>
+            <div class="content"> <a href="#" class="view_all">Show all video</a>
+              <div class="media"><a href="http://www.youtube.com/watch?v=ySIvism2af8" class="general_pic_hover play no_fx" data-rel="prettyPhoto" title="Popular Video"><img src="images/pic_pop_video.jpg" alt="" /></a></div>
+              <p><a href="blog_post_w_video.html">Publishing packages and web page editors their default model.</a> <img src="images/icon_video.gif" alt="" /></p>
+              <p class="date">11 July, 2012</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li class="comments"><a href="#">115</a></li>
+                <li class="views"><a href="#">220</a></li>
+              </ul>
+            </div>
+            <div class="clearboth"></div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_calendar">
+            <h4>Calendar</h4>
+            <div class="calendar" id="calendar_sidebar"> </div>
+            <script type="text/javascript">
+								var today = new Date();
+								var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+								$('#calendar_sidebar').DatePicker({
+									flat : true,
+									date : date,
+									calendars : 1,
+									starts : 1,
+									locale : {
+										days : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+										daysShort : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+										daysMin : ['S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
+										months : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+										monthsShort : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+										weekMin : 'wk'
+									}
+								});
+							</script>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_twitter_widget">
+            <h4>Twitter Widget</h4>
+            <div class="lnk_follow"><a href="#" target="_blank">Follow on Twitter</a></div>
+            <div class="tweet"> 
+              <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script> 
+              <script type="text/javascript" src="layout/plugins/tweet/tweet.widget.js"></script> 
+              <script type="text/javascript">
+                                    // ('YOUR USERNAME','NUMBER OF POSTS');
+                                    AddTweet('Web_Visions',1);
+                                </script> 
+            </div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_popular_stuff">
+            <h4>Popular Photo</h4>
+            <div class="content"> <a href="#" class="view_all">Show all photos</a>
+              <div class="media"><a href="images/pic_pop_photo_big.jpg" class="general_pic_hover zoom no_fx" data-rel="prettyPhoto" title="Popular Photo"><img src="images/pic_pop_photo.jpg" alt="" /></a></div>
+              <p><a href="blog_post_w_slider.html">Editors their default model text, and a search for will uncover many.</a> <img src="images/icon_photo.gif" alt="" /></p>
+              <p class="date">11 July, 2012</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li class="comments"><a href="#">100</a></li>
+                <li class="views"><a href="#">134</a></li>
+              </ul>
+            </div>
+            <div class="clearboth"></div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_newsletter">
+            <h4>Newsletter</h4>
+            <form action="#" />
+            
+            <div class="field">
+              <input type="text" class="w_def_text" title="Enter Your Email Addres" />
+            </div>
+            <input type="submit" class="button" value="Subscribe" />
+            <div class="clearboth"></div>
+            </form>
+          </div>
+        </div>
+        <div class="clearboth"></div>
+      </div>
+    </div>
+  </div>
+  <!-- CONTENT END --> 
+  
+  <!-- FOOTER BEGIN -->
+  <footer>
+    <div id="footer">
+      <div class="inner">
+        <div id="logo_bottom"><a href="index.html"><img src="images/logo_bottom.png" alt="" /></a></div>
+        <div class="block_to_top"> <a href="#">返回顶部</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END --> 
+</div>
+
+<!-- POPUP BEGIN -->
+<div id="overlay"></div>
+<div id="login" class="block_popup">
+  <div class="popup"> <a href="#" class="close">Close</a>
+    <div class="content">
+      <div class="title">
+        <p>Enter the site</p>
+      </div>
+      <div class="form">
+        <form action="#" />
+        
+        <div class="column">
+          <p class="label">Login</p>
+          <div class="field">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="column">
+          <p class="label">Password</p>
+          <div class="field">
+            <input type="password" />
+          </div>
+        </div>
+        <div class="column_2">
+          <div class="remember">
+            <div class="checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="remember_label">
+              <p>Remember me</p>
+            </div>
+          </div>
+        </div>
+        <div class="column_2">
+          <p class="forgot_pass"><a href="#">Forgot password?</a></p>
+        </div>
+        <div class="column button"> <a href="#" class="enter"><span>Login</span></a> </div>
+        <div class="clearboth"></div>
+        </form>
+      </div>
+      <div class="subtitle">
+        <p>SIGN IN AS A USER</p>
+      </div>
+      <div class="fb_button"><a href="#"><img src="images/button_fb_login.png" alt="" /></a></div>
+      <div class="text">
+        <p>Use your account on the social network Facebook, to create a profile on BusinessPress</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- POPUP END -->
+</body>
+</html>

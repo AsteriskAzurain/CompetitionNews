@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-12-4 1:24:10 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="base.pojo">
+	<class name="base.pojo.BBS_Posts" table="BBS_Posts">
+		<id name="p_pid" type="int">
+			<column name="p_pid" />
+			<generator class="identity" />
+		</id>
+		<property name="p_ptheme" type="java.lang.String">
+			<column name="p_ptheme" />
+		</property>
+		<property name="p_ptime" type="calendar">
+			<column name="p_ptime" />
+		</property>
+		<property name="p_paccount" type="int">
+			<column name="p_paccount" />
+		</property>
+		<property name="p_pnick" type="java.lang.String">
+			<column name="p_pnick" />
+		</property>
+		<property name="p_ptext" type="java.lang.String">
+		<column name="p_ptext"></column>
+		</property>
+	</class>
+</hibernate-mapping>

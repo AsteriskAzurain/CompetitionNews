@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CompetitionNews后台管理系统</title>
+<script type="text/javascript" src="../layout/js/jquery.js"></script>
+<script type="text/javascript" src="login/js/checklogin.js"></script>
+ <link rel="stylesheet" href="css/msstyle.css" type="text/css" />
+<script type="text/javascript">
+	function queryall() {
+		$
+				.ajax({
+					type : 'post',
+					url : 'adminqueryallaction.action',//此处的Action要与struts.xml中的action的name对应
+					success : function(data) {
+						//alert("success")
+						var n = data.reMap.resultlist.length
+						for (i = 0; i < n; i++) {
+							var str = data.reMap.resultlist[i].adminname
+							var userid = data.reMap.resultlist[i].adminid
+							resultuserlist.innerHTML += ('<li><a href="#">'
+									+ str
+									+ '</a><div class="btn2"><button onclick="updateuser('
+									+ userid
+									+ ')">修改</button><button onclick="deleteuser('
+									+ userid + ')">删除</button></div></li>');
+						}
+					},
+					error : function() {
+						alert("failed")
+					}
+				});
+	}
+
+	function deleteuser(userid) {
+		if (confirm("确定要删除吗？")) {
+			alert("已删除。")
+			window.location.replace("../admindeleteaction.action?adminid="
+					+ userid);
+		} else {
+			alert("已取消。")
+		}
+	}
+	function updateuser(userid) {
+		window.location.href = "update/user.html?userid=" + userid;
+	}
+</script>
+
+</head>
+
+<body bgcolor="#DDF5FA" onload="queryall(),checkCuser()">
+	<div style="float: right">
+		<span id="cadmin"> <a href="#" class="btn1" onClick="zhuxiao()">注销</a>
+	</div>
+	<header
+		style="margin-top: 40px; margin-left: 20px; margin-bottom: 50px;">
+		<img src="../images/ms_logo.png" alt="" style="height: 40px" /> <span
+			style="font-size: 30px; vertical-align: top">后台管理系统</span>
+	</header>
+	<div class="nav">
+		<ul class="lt1">
+			<li><a href="ms_nav.html">导航栏管理</a></li>
+			<li><a href="ms_cts.html">内容管理</a></li>
+			<li><a href="ms_docs.html">文件管理</a></li>
+			<li class="lt2"><a href="#">会员管理</a></li>
+		</ul>
+	</div>
+	<div class="content1">
+		<div class="snav">
+			<ul>
+				<li><a href="ms_index.html">首页</a></li>
+				<li class="current"><a href="#">用户管理</a></li>
+			</ul>
+		</div>
+		<div class="content2">
+			<div style="margin-left: 30px">
+				<h2>所有管理员</h2>
+				<form>
+					<input type="button" value="添加" class="i1"
+						style="background: #24b9c3; color: white; margin-right: 75px">
+					<input type="text" size="20" class="i1"> <input
+						type="button" value="搜索" class="i1">
+				</form>
+			</div>
+			<div style="margin-top: 50px;">
+				<ul class="content3" id="resultuserlist"></ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

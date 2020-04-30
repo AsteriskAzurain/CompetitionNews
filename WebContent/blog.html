@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>比赛论坛</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="layout/plugins/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="layout/style.css" type="text/css" />
+<script type="text/javascript" src="layout/js/jquery.js"></script>
+
+<!-- PrettyPhoto start -->
+<link rel="stylesheet" href="layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+<!-- PrettyPhoto end -->
+
+<!-- jQuery tools start -->
+<script type="text/javascript" src="layout/plugins/tools/jquery.tools.min.js"></script>
+<!-- jQuery tools end -->
+
+<!-- Calendar start -->
+<link rel="stylesheet" href="layout/plugins/calendar/calendar.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/calendar/calendar.js"></script>
+<!-- Calendar end -->
+
+<!-- ScrollTo start -->
+<script type="text/javascript" src="layout/plugins/scrollto/jquery.scroll.to.min.js"></script>
+<!-- ScrollTo end -->
+
+<!-- MediaElements start -->
+<link rel="stylesheet" href="layout/plugins/video-audio/mediaelementplayer.css" />
+<script src="layout/plugins/video-audio/mediaelement-and-player.js"></script>
+<!-- MediaElements end -->
+
+<!-- FlexSlider start -->
+<link rel="stylesheet" href="layout/plugins/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- FlexSlider end -->
+
+<!-- iButtons start -->
+<link rel="stylesheet" href="layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/ibuttons/lib/jquery.ibutton.min.js"></script>
+<!-- iButtons end -->
+
+<!-- jQuery Form Plugin start -->
+<script type="text/javascript" src="layout/plugins/ajaxform/jquery.form.js"></script>
+<!-- jQuery Form Plugin end -->
+
+<script type="text/javascript" src="layout/js/main.js"></script>
+<script type="text/javascript">
+	jQuery(function () {
+	});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+dl {
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+}
+dt {
+	overflow: hidden;
+	height: 47px;
+	line-height: 47px;
+	border: solid white;
+	border-width: 1px 0;
+	background-color: rgba(255,255,255,0.50)/*#F5F9FB*/;
+}
+dt a {
+	font-size: large;
+	display: block;
+	padding: 0 15px 0px 10px;
+}
+.btn {
+	margin-top: 32px;
+	height: 40px;
+	background: #2f435e;
+	color: #f2f2f2;
+	padding: 10px 30px 10px 30px;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 30px;
+	margin: 5px;
+}
+.c1 ul {
+	display: block;
+	list-style-type: disc;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	padding-inline-start: 40px;
+}
+.c1 li {
+	/*border: solid 1px #BEBEBE;*/
+	margin: 5px;
+	border-bottom: 1px #235800 solid;
+	float: left;
+	padding-bottom: 5px;
+}
+.c1 a {
+	color: #003004;
+	padding: 5px;
+}
+.c2 li {
+	height: 40px;
+	width: 90%;
+	border-bottom: solid #959595;
+}
+.c2 li a {
+	font-size: 20px;
+	line-height: 40px;
+}
+.c2 li a:hover {
+	color: blue
+}
+</style>
+</head>
+
+<body>
+<div class="wrapper sticky_footer"> 
+  <!-- HEADER BEGIN -->
+  <header>
+    <div id="header">
+      <section class="top">
+        <div class="inner">
+          <div class="fr">
+            <div class="block_top_menu">
+              <ul>
+                <li class="current">
+                  <div align="right"><a href="#login" class="open_popup">登陆</a></div>
+                </li>
+                <script language="javascript">
+									function zhuxiao()
+										{
+											if (confirm("确定要注销吗？")){
+												alert("已注销。")}
+											else{
+												alert("未注销。")}
+										}
+									</script>
+                <li>
+                  <div align="right"><a href="#" onClick="zhuxiao()">注销</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="inner">
+          <div id="logo_top"><a href="index.html"><img src="images/logo_top.png" alt="BusinessNews" title="竞赛信息网" /></a></div>
+          <div class="block_today_date">
+            <div class="num">
+              <p id="num_top" />
+            </div>
+            <div class="other">
+              <p class="month_year"><span id="month_top"></span>, <span id="year_top"></span></p>
+              <p id="day_top" class="day" />
+            </div>
+          </div>
+          <div class="fr">
+            <div class="block_languages">
+              <div class="clearboth"></div>
+            </div>
+            <div class="block_search_top">
+              <form action="#" >
+                <div class="field">
+                  <input type="text" class="w_def_text" title="输入你想搜索的内容" />
+                </div>
+                <input type="submit" class="button" value="Search" />
+                <div class="clearboth"></div>
+              </form>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="section_main_menu">
+        <div class="inner">
+          <nav class="main_menu">
+            <ul>
+              <li><a href="index.html">主页</a>
+              <li class="big_dropdown" data-content="technology"><a href="volun.html">公益征集</a></li>
+              </li>
+              <li class="big_dropdown" data-content="business"><a href="c_computer.html">比赛信息</a></li>
+              <li class="current_page_item"><a href="#">比赛论坛</a> </li>
+              <li><a href="typography.html">关于我们</a>
+                <ul>
+                  <li><a href="accordion.html">更多信息</a></li>
+                  <li><a href="pricing_table.html">会员充值</a></li>
+                  <li><a href="testimonials.html">励志标语</a></li>
+                </ul>
+              </li>
+              <li ><a href="contact.html">加入我们</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="section_big_dropdown">
+        <div class="inner">
+          <div class="block_big_dropdown" data-menu="business">
+            <div class="content">
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_3.jpg" alt="" /></a>
+                <p><a href="#">这里是火热报名中的竞赛活动。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_4.jpg" alt="" /></a>
+                <p><a href="#">这里是快速提升学科素养的通道。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="popular_posts">
+                <div class="title">
+                  <p>商业创业</p>
+                </div>
+                <ul>
+                  <li><a href="#"><span>01 July, 2019</span>2019第八届金程杯全国微课大赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>“长沙银行杯”2019年湖南省创新创业大赛和创新挑战赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+                </ul>
+              </div>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+          <div class="block_big_dropdown" data-menu="technology">
+            <div class="content">
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_5.jpg" alt="" /></a>
+                <p><a href="#">这里有正在报名的志愿活动。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_6.jpg" alt="" /></a>
+                <p><a href="#">这里有完美闭幕的活动集锦。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="popular_posts">
+                <div class="title">
+                  <p>志愿者招募令</p>
+                </div>
+                <ul>
+                  <li><a href="#"><span>01 July, 2019</span>金熊猫全球创新创业大赛志愿者招募！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>澳大利亚华人总工会招募线上英文志愿者招募！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019第七届#乌镇戏剧节#志愿者招募！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019大学生志愿服务西部计划正式招募！</a></li>
+                </ul>
+              </div>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- HEADER END --> 
+  
+  <!-- CONTENT BEGIN -->
+  <div class="inner" style="padding-top: 20px;">
+    <div style="float: left;width: 20%;height: 300px; background-color: rgba(253,227,227,1.00) ;padding: 20px;border:white thick solid"><!--cce0eb -->
+      <h2 style="margin-top: 20px;">板块导航</h2>
+      <dl>
+        <dt><a href="#">文学</a></dt>
+        <dt><a href="#">英语</a></dt>
+        <dt><a href="#">计算机</a></dt>
+        <dt><a href="#">数学</a></dt>
+      </dl>
+    </div>
+    <div style="float: right;width: 70%; margin: 10px;"><!-- class="main_content"
+         
+          <div class="separator" style="height:30px;"></div>-->
+      <div style="text-align: right">
+        <textarea style="width: 100%;height: 140px; font-size: 20px; padding: 5px" >在这里发布帖子...</textarea>
+        <input type="button" value="发布" class="btn" />
+      </div>
+      <div class="line_4" style="margin:0px 0px 0px;"></div>
+      <div class="block_pager"> <a href="#" class="prev">Previous</a> <a href="#" class="next">Next</a>
+        <div class="pages">
+          <ul>
+            <li class="current"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+          </ul>
+        </div>
+        <div class="clearboth"></div>
+      </div>
+      <div>
+        <ul class="c1">
+          <li><a href="#">全部</a></li>
+          <li><a href="#">文学</a></li>
+          <li><a href="#">英语</a></li>
+          <li><a href="#">计算机</a></li>
+          <li><a href="#">数学</a></li>
+        </ul>
+      </div>
+      <div class="line_2" style="margin:24px 0px 25px;"></div>
+      <div style="height: 500px;">
+        <ul class="c2">
+          <li><a href="#">帖子1</a></li>
+          <li><a href="#">帖子2</a></li>
+          <li><a href="#">帖子3</a></li>
+          <li><a href="#">帖子4</a></li>
+          <li><a href="#">帖子5</a></li>
+          <li><a href="#">帖子6</a></li>
+          <li><a href="#">帖子7</a></li>
+          <li><a href="#">帖子8</a></li>
+        </ul>
+      </div>
+      <div class="block_pager"> <a href="#" class="prev">Previous</a> <a href="#" class="next">Next</a>
+        <div class="pages">
+          <ul>
+            <li class="current"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+          </ul>
+        </div>
+        <div class="clearboth"></div>
+      </div>
+    </div>
+  </div>
+  <!-- CONTENT END --> 
+  
+  <!-- FOOTER BEGIN -->
+  <footer>
+    <div id="footer">
+      <div class="inner">
+        <div id="logo_bottom"><a href="index.html"><img src="images/logo_bottom.png" alt="" /></a></div>
+        <div class="block_to_top"> <a href="#">返回顶部</a></div>
+      </div>
+    </div>
+  </footer>
+  <!-- FOOTER END --> 
+</div>
+
+<!-- POPUP BEGIN -->
+<div id="overlay"></div>
+<div id="login" class="block_popup">
+  <div class="popup"> <a href="#" class="close">Close</a>
+    <div class="content">
+      <div class="title">
+        <p>Enter the site</p>
+      </div>
+      <div class="form">
+        <form action="#" >
+          <div class="column">
+            <p class="label">Login</p>
+            <div class="field">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="column">
+            <p class="label">Password</p>
+            <div class="field">
+              <input type="password" />
+            </div>
+          </div>
+          <div class="column_2">
+            <div class="remember">
+              <div class="checkbox">
+                <input type="checkbox" />
+              </div>
+              <div class="remember_label">
+                <p>Remember me</p>
+              </div>
+            </div>
+          </div>
+          <div class="column_2">
+            <p class="forgot_pass"><a href="#">Forgot password?</a></p>
+          </div>
+          <div class="column button"> <a href="#" class="enter"><span>Login</span></a> </div>
+          <div class="clearboth"></div>
+        </form>
+      </div>
+      <div class="subtitle">
+        <p>SIGN IN AS A USER</p>
+      </div>
+      <div class="fb_button"><a href="#"><img src="images/button_fb_login.png" alt="" /></a></div>
+      <div class="text">
+        <p>Use your account on the social network Facebook, to create a profile on BusinessPress</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- POPUP END -->
+</body>
+</html>

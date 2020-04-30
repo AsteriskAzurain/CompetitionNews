@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-12-4 1:24:10 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="base.pojo">
+	<class name="base.pojo.User" table="User_Info">
+		<id name="userid" type="int">
+			<column name="userid" />
+			<generator class="identity" />
+		</id>
+		<property name="username" type="java.lang.String">
+			<column name="username" />
+		</property>
+		<property name="email" type="java.lang.String">
+			<column name="email" />
+		</property>
+		<property name="password" type="java.lang.String">
+			<column name="password" />
+		</property>
+		<property name="sex" type="java.lang.String">
+			<column name="sex" />
+		</property>
+		<property name="major" type="java.lang.String">
+			<column name="major" />
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BusinessNews - Our Blog - Blog Name</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="layout/plugins/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="layout/style.css" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="layout/js/jquery.js"></script>
+
+<!-- PrettyPhoto start -->
+<link rel="stylesheet" href="layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+<!-- PrettyPhoto end -->
+
+<!-- jQuery tools start -->
+<script type="text/javascript" src="layout/plugins/tools/jquery.tools.min.js"></script>
+<!-- jQuery tools end -->
+
+<!-- Calendar start -->
+<link rel="stylesheet" href="layout/plugins/calendar/calendar.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/calendar/calendar.js"></script>
+<!-- Calendar end -->
+
+<!-- ScrollTo start -->
+<script type="text/javascript" src="layout/plugins/scrollto/jquery.scroll.to.min.js"></script>
+<!-- ScrollTo end -->
+
+<!-- MediaElements start -->
+<link rel="stylesheet" href="layout/plugins/video-audio/mediaelementplayer.css" />
+<script src="layout/plugins/video-audio/mediaelement-and-player.js"></script>
+<!-- MediaElements end -->
+
+<!-- FlexSlider start -->
+<link rel="stylesheet" href="layout/plugins/flexslider/flexslider.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- FlexSlider end -->
+
+<!-- iButtons start -->
+<link rel="stylesheet" href="layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css" />
+<script type="text/javascript" src="layout/plugins/ibuttons/lib/jquery.ibutton.min.js"></script>
+<!-- iButtons end -->
+
+<!-- jQuery Form Plugin start -->
+<script type="text/javascript" src="layout/plugins/ajaxform/jquery.form.js"></script>
+<!-- jQuery Form Plugin end -->
+
+<script type="text/javascript" src="layout/js/main.js"></script>
+<script type="text/javascript">
+	jQuery(function () {
+	});
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<div class="wrapper sticky_footer"> 
+  <!-- HEADER BEGIN -->
+  <header>
+    <div id="header">
+      <section class="top">
+        <div class="inner">
+          <div class="fr">
+            <div class="block_top_menu">
+              <ul>
+                <li class="current">
+                  <div align="right"><a href="#login" class="open_popup">登陆</a></div>
+                </li>
+                <script language="javascript">
+									function zhuxiao()
+										{
+											if (confirm("确定要注销吗？")){
+												alert("已注销。")}
+											else{
+												alert("未注销。")}
+										}
+									</script>
+                <li>
+                  <div align="right"><a href="#" onClick="zhuxiao()">注销</a></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="inner">
+          <div id="logo_top"><a href="index.html"><img src="images/logo_top.png" alt="BusinessNews" title="竞赛信息网" /></a></div>
+          <div class="block_today_date">
+            <div class="num">
+              <p id="num_top" />
+            </div>
+            <div class="other">
+              <p class="month_year"><span id="month_top"></span>, <span id="year_top"></span></p>
+              <p id="day_top" class="day" />
+            </div>
+          </div>
+          <div class="fr">
+            <div class="block_languages">
+              <div class="clearboth"></div>
+            </div>
+            <div class="block_search_top">
+              <form action="#" >
+                <div class="field">
+                  <input type="text" class="w_def_text" title="输入你想搜索的内容" />
+                </div>
+                <input type="submit" class="button" value="Search" />
+                <div class="clearboth"></div>
+              </form>
+            </div>
+          </div>
+          <div class="clearboth"></div>
+        </div>
+      </section>
+      <section class="section_main_menu">
+        <div class="inner">
+          <nav class="main_menu">
+            <ul>
+              <li><a href="index.html">主页</a>
+              <li class="current_page_item"><a href="#">公益征集</a></li>
+              </li>
+              <li class="big_dropdown" data-content="business"><a href="c_computer.html">比赛信息</a></li>
+              <li><a href="blog.html">比赛论坛</a> 
+              </li>
+              <li><a href="typography.html">关于我们</a>
+                <ul>
+                  <li><a href="accordion.html">更多信息</a></li>
+                  <li><a href="pricing_table.html">会员充值</a></li>
+                  <li><a href="testimonials.html">励志标语</a></li>
+
+                </ul>
+              </li>
+              <li ><a href="contact.html">加入我们</a></li>
+            </ul>
+       </nav>
+        </div>
+      </section>
+      <section class="section_big_dropdown">
+        <div class="inner">
+          <div class="block_big_dropdown" data-menu="business">
+            <div class="content">
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_3.jpg" alt="" /></a>
+                <p><a href="#">这里是火热报名中的竞赛活动。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="image"> <a href="#" class="pic"><img src="images/pic_big_drop_4.jpg" alt="" /></a>
+                <p><a href="#">这里是快速提升学科素养的通道。</a></p>
+              </div>
+              <div class="line"></div>
+              <div class="popular_posts">
+                <div class="title">
+                  <p>商业创业</p>
+                </div>
+                <ul>
+                  <li><a href="#"><span>01 July, 2019</span>2019第八届金程杯全国微课大赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>“长沙银行杯”2019年湖南省创新创业大赛和创新挑战赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+                  <li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+                </ul>
+              </div>
+              <div class="clearboth"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+    </div>
+  </header>
+  <!-- HEADER END --> 
+  
+  <!-- CONTENT BEGIN -->
+  <div id="content" class="right_sidebar">
+    <div class="inner">
+      <div class="general_content">
+        <div class="main_content">
+          <div class="block_breadcrumbs">
+            <div class="text">
+              <p>您的位置：</p>
+            </div>
+            <ul>
+              <li><a href="index.html">公益征集</a></li>
+              <li>广州国际纪录片节志愿者招募</li>
+            </ul>
+          </div>
+          <div class="separator" style="height:30px;"></div>
+          <article class="block_single_post">
+            <div class="f_pic">
+              <li><img src="images/pic_blog_1_1.jpg" alt="" /></li>
+              <script type="text/javascript">
+									$(window).load(function() {
+										$('#post_slider').flexslider({
+											animation : 'fade',
+											controlNav : true,
+											directionNav : true,
+											animationLoop : true,
+											slideshow : false
+										});
+									});
+								</script> 
+            </div>
+            <p class="title"><a href="#">志愿者招募 | 广州国际纪录片节志愿者招募</a></p>
+            <p class="subtitle"><strong>摘要</strong>: 报名时间：今日起至2019年10月13日24:00截止 || 中国（广州）国际纪录片节（简称GZDOC）创始于2003年，是中国历史最长、唯一具备纪录片投融资、交易功能的国家级纪录片节。 2019年，中国（广州）国际纪录片节定于12 ...</p>
+            <div class="info">
+              <div class="date">
+                <p>15 July, 2012</p>
+              </div>
+              <div class="author">
+                <p>By: <a href="#">John Doe</a></p>
+              </div>
+              <div class="r_part">
+                <div class="category">
+                  <p>category: <a href="#">BUSINESS</a></p>
+                </div>
+                <a href="#" class="views">650</a> <a href="#" class="comments">25</a> </div>
+            </div>
+            <div class="content">
+              <p>中国（广州）国际纪录片节（简称GZDOC）创始于2003年，是中国历史最长、唯一具备纪录片投融资、交易功能的国家级纪录片节。 2019年，中国（广州）国际纪录片节定于12月9-12日在中国广州举行。作为中国唯一国家级纪录片年度盛会，吸引近千家，逾4000位最具影响力的中外纪录片播放媒体、制作机构的买家、供片商代表和制片人聚首广州。2019年，成为五大洲130个国家与地区、3441部（5386部/集）作品参评参展的国际化影视节展。目前为止，征片数量和国家覆盖范围名列前茅。</p>
+              <blockquote class="full">
+                <p><strong>报名时间：</strong>今日起至2019年10月13日24:00截止</p>
+                <p><strong>工作时间：</strong>2019年12月9日-12日（部分岗位将根据具体情况安排提前入职。）<br>
+                </p>
+              </blockquote>
+              <p>国际外联组（45人）<br>
+                1. 执行助理（10人）<br>
+                工作内容：<br>
+                协助工作人员进行现场执行工作，包括但不限于外宾注册、论坛、大师班、决策人面对面、招待会等工作。<br>
+                要求：<br>
+                （1）良好的英语口语能力，能与外宾进行沟通；<br>
+                （2）优秀的执行能力和吃苦耐劳的精神，而且要细心细心再细心。<br>
+                <br>
+                2. 决策人面对面会议会晤助理（22人）<br>
+                工作内容：<br>
+                协助决策人进行面对面交流活动，工作内容包括但不限于会议记录、翻译、决策人行程管理等。<br>
+                要求：<br>
+                （1）优秀的英语口语能力及翻译水平，能协助外宾与中方参会人员进行交流；<br>
+                （2）工作细心且能吃苦，并能服从工作人员的安排以及要求；<br>
+                （3）良好的自制能力，对会务接待礼仪有一定的了解，并能专业地对待工作。<br>
+                <br>
+                3. 代表团接待（8人）<br>
+                工作内容：<br>
+                接待代表团及部分贵宾，协助其参展活动并进行日程管理，提供翻译服务。<br>
+                要求：<br>
+                （1）优秀的英语口语能力或其他小语种专业（韩语、意大利语、德语、芬兰语、法语等）；<br>
+                （2）工作细心且能吃苦，并能服从工作人员的安排以及要求；<br>
+                （3）良好的自制能力，对会务接待礼仪有一定的了解，并能专业地对待工作。</p>
+              <div class="separator" style="height:4px;"></div>
+              <h6>报名须知</h6>
+              <div class="separator" style="height:4px;"></div>
+              <a href="#" class="pic w_frame alignleft"><img src="images/pic_blog_post_2.jpg" alt="" /></a>
+              <p>1、面试时间：10月20日<br>
+                面试地点：广州图书馆（通过初选的外地报名者可申请线上面试）</p>
+              <p><br>
+                2、入选公布时间为2019年10月底，入选结果将以电子邮件或短信方式进行通知。部分岗位将根据情况安排提前入职。</p>
+              <p><br>
+                3、如报名完成后需进行报名信息或材料更替，请发送邮件<a href="mailto:gzdoc2017@163.com"  class="lnk_blue">gzdoc2017@163.com</a>，组委会将在审核后进行材料更替。如已进入评选阶段，则无法进行信息替换。</p>
+              <p>报名方式： 点击链接 <a href="https://www.wenjuan.com/s/yiQ7naD/" class="lnk_blue">https://www.wenjuan.com/s/yiQ7naD/</a></p>
+              <p>快来与我们一起Carry全场！这么多志愿者岗位，小伙伴们可要记好了，别搞混了！现在，快用你的拇指点开上面的<b>网站链接</b>进行报名吧！</p>
+            </div>
+          </article>
+          <div class="line_2" style="margin:22px 0px 29px;"></div>
+          <div class="block_comments">
+            <h2>4 Comments</h2>
+            <div class="comment">
+              <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+              <div class="content">
+                <p class="name"><a href="#">John Doe</a></p>
+                <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                <p class="text">Established fact that a reader will be distracted by the readable content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+              </div>
+              <div class="clearboth"></div>
+              <div class="line_3"></div>
+            </div>
+            <div class="comment">
+              <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+              <div class="content">
+                <p class="name"><a href="#">Sara Gordon</a></p>
+                <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                <p class="text">Distracted by the readable content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</p>
+              </div>
+              <div class="clearboth"></div>
+              <div class="line_3"></div>
+              <div class="comment">
+                <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+                <div class="content">
+                  <p class="name"><a href="#">Alan Foylee</a></p>
+                  <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                  <p class="text">Content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.</p>
+                </div>
+                <div class="clearboth"></div>
+                <div class="line_3"></div>
+              </div>
+            </div>
+            <div class="comment">
+              <div class="userpic"><a href="#"><img src="images/ava_default_1.jpg" alt="" /></a></div>
+              <div class="content">
+                <p class="name"><a href="#">Matilda King</a></p>
+                <p class="info"><span class="date">Febr 16, 2012 at 4:43 pm</span><a href="#" class="control">Reply</a></p>
+                <p class="text">Established fact that a reader will be distracted by the readable content of a page. When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.</p>
+              </div>
+              <div class="clearboth"></div>
+              <div class="line_3"></div>
+            </div>
+          </div>
+          <div class="separator" style="height:30px;"></div>
+        </div>
+        <div class="sidebar">
+          <div class="block_subscribes_sidebar">
+            <div class="service"> <a href="#" class="rss"> <span class="num">11 234</span> <span class="people">Subscribers</span> </a> </div>
+            <div class="service"> <a href="#" class="tw"> <span class="num">781</span> <span class="people">Followers</span> </a> </div>
+            <div class="service"> <a href="#" class="fb"> <span class="num">341</span> <span class="people">Subscribers</span> </a> </div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_popular_posts">
+            <h4>Popular Posts</h4>
+            <div class="article">
+              <div class="pic"> <a href="#" class="w_hover"> <img src="images/pic_popular_post_1.jpg" alt="" /> <span></span> </a> </div>
+              <div class="text">
+                <p class="title"><a href="#">Packages and web page editors their default text.</a></p>
+                <div class="date">
+                  <p>11 July, 2012</p>
+                </div>
+                <div class="icons">
+                  <ul>
+                    <li><a href="#" class="views">41</a></li>
+                    <li><a href="#" class="comments">22</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line_3"></div>
+            <div class="article">
+              <div class="pic"> <a href="#" class="w_hover"> <img src="images/pic_popular_post_2.jpg" alt="" /> <span></span> </a> </div>
+              <div class="text">
+                <p class="title"><a href="#">Web page editors their default model text, and a search for.</a></p>
+                <div class="date">
+                  <p>07 July, 2012</p>
+                </div>
+                <div class="icons">
+                  <ul>
+                    <li><a href="#" class="views">24</a></li>
+                    <li><a href="#" class="comments">16</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line_3"></div>
+            <div class="article">
+              <div class="pic"> <a href="#" class="w_hover"> <img src="images/pic_popular_post_3.jpg" alt="" /> <span></span> </a> </div>
+              <div class="text">
+                <p class="title"><a href="#">Editors their default model text, and a search uncover.</a></p>
+                <div class="date">
+                  <p>05 July, 2012</p>
+                </div>
+                <div class="icons">
+                  <ul>
+                    <li><a href="#" class="views">33</a></li>
+                    <li><a href="#" class="comments">25</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_popular_stuff">
+            <h4>Popular Video</h4>
+            <div class="content"> <a href="#" class="view_all">Show all video</a>
+              <div class="media"><a href="http://www.youtube.com/watch?v=ySIvism2af8" class="general_pic_hover play no_fx" data-rel="prettyPhoto" title="Popular Video"><img src="images/pic_pop_video.jpg" alt="" /></a></div>
+              <p><a href="blog_post_w_video.html">Publishing packages and web page editors their default model.</a> <img src="images/icon_video.gif" alt="" /></p>
+              <p class="date">11 July, 2012</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li class="comments"><a href="#">115</a></li>
+                <li class="views"><a href="#">220</a></li>
+              </ul>
+            </div>
+            <div class="clearboth"></div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_calendar">
+            <h4>Calendar</h4>
+            <div class="calendar" id="calendar_sidebar"> </div>
+            <script type="text/javascript">
+								var today = new Date();
+								var date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+								$('#calendar_sidebar').DatePicker({
+									flat : true,
+									date : date,
+									calendars : 1,
+									starts : 1,
+									locale : {
+										days : ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+										daysShort : ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+										daysMin : ['S', 'M', 'T', 'W', 'T', 'F', 'S', 'S'],
+										months : ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+										monthsShort : ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+										weekMin : 'wk'
+									}
+								});
+							</script>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_twitter_widget">
+            <h4>Twitter Widget</h4>
+            <div class="lnk_follow"><a href="#" target="_blank">Follow on Twitter</a></div>
+            <div class="tweet"> 
+              <script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script> 
+              <script type="text/javascript" src="layout/plugins/tweet/tweet.widget.js"></script> 
+              <script type="text/javascript">
+                                    // ('YOUR USERNAME','NUMBER OF POSTS');
+                                    AddTweet('Web_Visions',1);
+                                </script> 
+            </div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_popular_stuff">
+            <h4>Popular Photo</h4>
+            <div class="content"> <a href="#" class="view_all">Show all photos</a>
+              <div class="media"><a href="images/pic_pop_photo_big.jpg" class="general_pic_hover zoom no_fx" data-rel="prettyPhoto" title="Popular Photo"><img src="images/pic_pop_photo.jpg" alt="" /></a></div>
+              <p><a href="blog_post_w_slider.html">Editors their default model text, and a search for will uncover many.</a> <img src="images/icon_photo.gif" alt="" /></p>
+              <p class="date">11 July, 2012</p>
+            </div>
+            <div class="info">
+              <ul>
+                <li class="comments"><a href="#">100</a></li>
+                <li class="views"><a href="#">134</a></li>
+              </ul>
+            </div>
+            <div class="clearboth"></div>
+            <div class="line_2"></div>
+          </div>
+          <div class="separator" style="height:31px;"></div>
+          <div class="block_newsletter">
+            <h4>Newsletter</h4>
+            <form action="#" />
+            
+            <div class="field">
+              <input type="text" class="w_def_text" title="Enter Your Email Addres" />
+            </div>
+            <input type="submit" class="button" value="Subscribe" />
+            <div class="clearboth"></div>
+            </form>
+          </div>
+        </div>
+        <div class="clearboth"></div>
+      </div>
+    </div>
+  </div>
+  <!-- CONTENT END --> 
+  
+  <!-- FOOTER BEGIN --> <footer>
+    <div id="footer">
+      <div class="inner">
+        <div id="logo_bottom"><a href="index.html"><img src="images/logo_bottom.png" alt="" /></a></div>
+        <div class="block_to_top"> <a href="#">返回顶部</a></div>
+      </div>
+    </div>
+  </footer><!-- FOOTER END --> 
+</div>
+
+<!-- POPUP BEGIN -->
+<div id="overlay"></div>
+<div id="login" class="block_popup">
+  <div class="popup"> <a href="#" class="close">Close</a>
+    <div class="content">
+      <div class="title">
+        <p>Enter the site</p>
+      </div>
+      <div class="form">
+        <form action="#" />
+        
+        <div class="column">
+          <p class="label">Login</p>
+          <div class="field">
+            <input type="text" />
+          </div>
+        </div>
+        <div class="column">
+          <p class="label">Password</p>
+          <div class="field">
+            <input type="password" />
+          </div>
+        </div>
+        <div class="column_2">
+          <div class="remember">
+            <div class="checkbox">
+              <input type="checkbox" />
+            </div>
+            <div class="remember_label">
+              <p>Remember me</p>
+            </div>
+          </div>
+        </div>
+        <div class="column_2">
+          <p class="forgot_pass"><a href="#">Forgot password?</a></p>
+        </div>
+        <div class="column button"> <a href="#" class="enter"><span>Login</span></a> </div>
+        <div class="clearboth"></div>
+        </form>
+      </div>
+      <div class="subtitle">
+        <p>SIGN IN AS A USER</p>
+      </div>
+      <div class="fb_button"><a href="#"><img src="images/button_fb_login.png" alt="" /></a></div>
+      <div class="text">
+        <p>Use your account on the social network Facebook, to create a profile on BusinessPress</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- POPUP END -->
+</body>
+</html>

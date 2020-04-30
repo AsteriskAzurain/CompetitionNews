@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>竞赛信息网 - 登陆</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="layout/plugins/html5.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="layout/style.css" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700"
+	rel="stylesheet" type="text/css" />
+<link
+	href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700"
+	rel="stylesheet" type="text/css" />
+<link
+	href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic"
+	rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="layout/js/jquery.js"></script>
+
+<!-- PrettyPhoto start -->
+<link rel="stylesheet"
+	href="layout/plugins/prettyphoto/css/prettyPhoto.css" type="text/css" />
+<script type="text/javascript"
+	src="layout/plugins/prettyphoto/jquery.prettyPhoto.js"></script>
+<!-- PrettyPhoto end -->
+
+<!-- jQuery tools start -->
+<script type="text/javascript"
+	src="layout/plugins/tools/jquery.tools.min.js"></script>
+<!-- jQuery tools end -->
+
+<!-- Calendar start -->
+<link rel="stylesheet" href="layout/plugins/calendar/calendar.css"
+	type="text/css" />
+<script type="text/javascript" src="layout/plugins/calendar/calendar.js"></script>
+<!-- Calendar end -->
+
+<!-- ScrollTo start -->
+<script type="text/javascript"
+	src="layout/plugins/scrollto/jquery.scroll.to.min.js"></script>
+<!-- ScrollTo end -->
+
+<!-- MediaElements start -->
+<link rel="stylesheet"
+	href="layout/plugins/video-audio/mediaelementplayer.css" />
+<script src="layout/plugins/video-audio/mediaelement-and-player.js"></script>
+<!-- MediaElements end -->
+
+<!-- FlexSlider start -->
+<link rel="stylesheet" href="layout/plugins/flexslider/flexslider.css"
+	type="text/css" />
+<script type="text/javascript"
+	src="layout/plugins/flexslider/jquery.flexslider-min.js"></script>
+<!-- FlexSlider end -->
+
+<!-- iButtons start -->
+<link rel="stylesheet"
+	href="layout/plugins/ibuttons/css/jquery.ibutton.css" type="text/css" />
+<script type="text/javascript"
+	src="layout/plugins/ibuttons/lib/jquery.ibutton.min.js"></script>
+<!-- iButtons end -->
+
+<!-- jQuery Form Plugin start -->
+<script type="text/javascript"
+	src="layout/plugins/ajaxform/jquery.form.js"></script>
+<!-- jQuery Form Plugin end -->
+
+<script type="text/javascript" src="layout/js/main.js"></script>
+<script type="text/javascript">
+	jQuery(function() {
+	});
+</script>
+
+<script type="text/javascript">
+	var req = new XMLHttpRequest();
+	var errorMsg = $('#errorMessage').value;
+	if (errorMsg != null) {
+		alert(errorMsg);
+	}
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+	<div class="wrapper sticky_footer">
+		<!-- HEADER BEGIN -->
+
+		<header>
+			<header>
+				<div id="header">
+					<section class="top">
+						<div class="inner">
+							<div class="fr">
+								<div class="block_top_menu">
+									<ul>
+										<li class="current">
+											<div align="right">
+												<a href="#login" class="open_popup">登陆</a>
+											</div>
+										</li>
+										<script language="javascript">
+											function zhuxiao() {
+												if (confirm("确定要注销吗？")) {
+													alert("已注销。")
+												} else {
+													alert("未注销。")
+												}
+											}
+										</script>
+										<li>
+											<div align="right">
+												<a href="#" onClick="zhuxiao()">注销</a>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearboth"></div>
+						</div>
+					</section>
+					<section class="bottom">
+						<div class="inner">
+							<div id="logo_top">
+								<a href="index.html"><img src="images/logo_top.png"
+									alt="BusinessNews" title="竞赛信息网" /></a>
+							</div>
+							<div class="block_today_date">
+								<div class="num">
+									<p id="num_top" />
+								</div>
+								<div class="other">
+									<p class="month_year">
+										<span id="month_top"></span>, <span id="year_top"></span>
+									</p>
+									<p id="day_top" class="day" />
+								</div>
+							</div>
+							<div class="fr">
+								<div class="block_languages">
+									<div class="clearboth"></div>
+								</div>
+								<div class="block_search_top">
+									<form action="#">
+										<div class="field">
+											<input type="text" class="w_def_text" title="输入你想搜索的内容" />
+										</div>
+										<input type="submit" class="button" value="Search" />
+										<div class="clearboth"></div>
+									</form>
+								</div>
+							</div>
+							<div class="clearboth"></div>
+						</div>
+					</section>
+					<section class="section_main_menu">
+						<div class="inner">
+							<nav class="main_menu">
+								<ul>
+									<li class="current_page_item"><a href="index.html">主页</a></li>
+									<li class="big_dropdown" data-content="technology"><a
+										href="volun.html">公益征集</a></li>
+									<li class="big_dropdown" data-content="business"><a
+										href="c_computer.html">比赛信息</a></li>
+									<li><a href="blog.html">比赛论坛</a></li>
+									<li><a href="typography.html">关于我们</a>
+										<ul>
+											<li><a href="accordion.html">更多信息</a></li>
+											<li><a href="pricing_table.html">会员充值</a></li>
+											<li><a href="testimonials.html">励志标语</a></li>
+										</ul></li>
+									<li><a href="contact.html">加入我们</a></li>
+								</ul>
+							</nav>
+						</div>
+					</section>
+					<section class="section_big_dropdown">
+						<div class="inner">
+							<div class="block_big_dropdown" data-menu="business">
+								<div class="content">
+									<div class="image">
+										<a href="#" class="pic"><img
+											src="images/pic_big_drop_3.jpg" alt="" /></a>
+										<p>
+											<a href="#">这里是火热报名中的竞赛活动。</a>
+										</p>
+									</div>
+									<div class="line"></div>
+									<div class="image">
+										<a href="#" class="pic"><img
+											src="images/pic_big_drop_4.jpg" alt="" /></a>
+										<p>
+											<a href="#">这里是快速提升学科素养的通道。</a>
+										</p>
+									</div>
+									<div class="line"></div>
+									<div class="popular_posts">
+										<div class="title">
+											<p>商业创业</p>
+										</div>
+										<ul>
+											<li><a href="#"><span>01 July, 2019</span>2019第八届金程杯全国微课大赛报名中！</a></li>
+											<li><a href="#"><span>01 July, 2019</span>“长沙银行杯”2019年湖南省创新创业大赛和创新挑战赛报名中！</a></li>
+											<li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+											<li><a href="#"><span>01 July, 2019</span>2019年第十三届iCAN国际创新创业大赛报名中！</a></li>
+										</ul>
+									</div>
+									<div class="clearboth"></div>
+								</div>
+							</div>
+							<div class="block_big_dropdown" data-menu="technology">
+								<div class="content">
+									<div class="image">
+										<a href="#" class="pic"><img
+											src="images/pic_big_drop_5.jpg" alt="" /></a>
+										<p>
+											<a href="#">这里有正在报名的志愿活动。</a>
+										</p>
+									</div>
+									<div class="line"></div>
+									<div class="image">
+										<a href="#" class="pic"><img
+											src="images/pic_big_drop_6.jpg" alt="" /></a>
+										<p>
+											<a href="#">这里有完美闭幕的活动集锦。</a>
+										</p>
+									</div>
+									<div class="line"></div>
+									<div class="popular_posts">
+										<div class="title">
+											<p>志愿者招募令</p>
+										</div>
+										<ul>
+											<li><a href="#"><span>01 July, 2019</span>金熊猫全球创新创业大赛志愿者招募！</a></li>
+											<li><a href="#"><span>01 July, 2019</span>澳大利亚华人总工会招募线上英文志愿者招募！</a></li>
+											<li><a href="#"><span>01 July, 2019</span>2019第七届#乌镇戏剧节#志愿者招募！</a></li>
+											<li><a href="#"><span>01 July, 2019</span>2019大学生志愿服务西部计划正式招募！</a></li>
+										</ul>
+									</div>
+									<div class="clearboth"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</header>
+		</header>
+		<!-- HEADER END -->
+
+		<!-- CONTENT BEGIN -->
+		<div id="content" class="">
+			<div class="inner">
+				<div class="general_content">
+					<div class="main_content">
+						<div class="block_breadcrumbs">
+							<div class="text">
+								<p>您的位置:</p>
+							</div>
+							<ul>
+								<li><a href="index.html">主页</a></li>
+								<li>注册</li>
+							</ul>
+						</div>
+						<div class="separator" style="height: 28px;"></div>
+						<p class="general_title">加入我们</p>
+						<div class="separator" style="height: 39px;"></div>
+						<div class="block_registration">
+							<form action="registcheckaction.action" class="w_validation" method="post">
+
+							<div class="col_1">
+								<div class="label">
+									<p>
+										<font color="#676767">用户名<span>*</span>: 
+									</p>
+								</div>
+								<div class="field">
+									<input type="text" class="req" name="username" />
+								</div>
+
+								<div class="clearboth"></div>
+								<div class="separator" style="height: 12px;"></div>
+								<div class="label">
+									<p>
+										密码<span>*</span>:
+									</p>
+								</div>
+								<div class="field">
+									<input type="password" class="req" name="pswd1" />
+								</div>
+								<div class="clearboth"></div>
+								<div class="separator" style="height: 12px;"></div>
+								<div class="label">
+									<p>
+										确认密码<span>*</span>:
+									</p>
+								</div>
+								<div class="field">
+									<input type="password" class="req" name="pswd2" />
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="col_2">
+								<div class="label">
+									<p>性别:</p>
+								</div>
+								<div class="checkbox">
+									<input class="sliding_checkbox" type="checkbox" name="sex" />
+								</div>
+								<script type="text/javascript">
+									$(document).ready(function() {
+										$('.sliding_checkbox').iButton({
+											labelOn : '女性',
+											labelOff : '男性',
+											resizeHandle : false,
+											resizeContainer : false
+										});
+									});
+								</script>
+								<div class="clearboth"></div>
+								<div class="separator" style="height: 12px;"></div>
+								<div class="label">
+									<p>就读专业:</p>
+								</div>
+								<div class="select">
+									<select class="custom_select" name="major">
+										<option /> &nbsp;
+										<option /> 计算机
+
+										<option /> 物联网
+
+										<option /> 商务经济
+
+										<option /> 土木工程
+
+									</select>
+								</div>
+								<div class="clearboth"></div>
+								<div class="separator" style="height: 14px;"></div>
+								<div class="label">
+									<p>邮箱:<span>*</span></p>
+								</div>
+								<div class="field">
+									<input type="text" class="req" name="email" />
+								</div>
+								<div class="clearboth"></div>
+							</div>
+							<div class="clearboth"></div>
+							<div class="separator" style="height: 32px;"></div>
+							<p class="info_text">
+								单击“注册”按钮，即表示您同意如下服务条款。(<a href="#">服务条款</a>)
+							</p>
+							<p class="info_text">
+								<input type="submit" class="general_button" value="立即注册" />
+							</p>
+							</form>
+						</div>
+						<div class="line_3" style="margin: 42px 0px 0px;"></div>
+					</div>
+					<div class="clearboth"></div>
+				</div>
+			</div>
+		</div>
+		<!-- CONTENT END -->
+
+		<!-- FOOTER BEGIN -->
+		<footer>
+			<div id="footer">
+				<div class="inner">
+					<div id="logo_bottom">
+						<a href="index.html"><img src="images/logo_bottom.png" alt="" /></a>
+					</div>
+					<div class="block_to_top">
+						<a href="#">返回顶部</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- FOOTER END -->
+	</div>
+
+</body>
+</html>

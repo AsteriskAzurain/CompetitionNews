@@ -1,0 +1,12 @@
+document.writeln("		<footer>");
+document.writeln("			<div id=\'footer\'>");
+document.writeln("				<div class=\'inner\'>");
+document.writeln("					<div id=\'logo_bottom\'>");
+document.writeln("						<a href=\'index.html\'><img src=\'images/logo_bottom.png\' alt=\'\' /></a>");
+document.writeln("					</div>");
+document.writeln("					<div class=\'block_to_top\'>");
+document.writeln("						<a href=\'#\'>返回顶部</a>");
+document.writeln("					</div>");
+document.writeln("				</div>");
+document.writeln("			</div>");
+document.writeln("		</footer>");

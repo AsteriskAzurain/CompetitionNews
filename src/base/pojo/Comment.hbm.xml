@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-12-4 1:24:10 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="base.pojo">
+	<class name="base.pojo.Comment" table="BBS_Comment">
+		<id name="c_no" type="int">
+			<column name="c_no" />
+			<generator class="identity" />
+		</id>
+		<property name="c_cid" type="java.lang.Integer">
+			<column name="c_cid" />
+		</property>
+		<property name="c_ctext" type="java.lang.String">
+			<column name="c_ctext" />
+		</property>
+		<property name="c_uaccount" type="java.lang.Integer">
+			<column name="c_uaccount" />
+		</property>
+		<property name="c_caccount" type="java.lang.Integer">
+			<column name="c_caccount" />
+		</property>
+		<property name="c_ctime" type="calendar">
+			<column name="c_ctime" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

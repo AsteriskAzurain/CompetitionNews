@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<package name="strutsname" namespace="/"
+		extends="struts-default">
+		<action name="initpage" class="userAction" method="initpage">
+			<result name="success">/index.html</result>
+		</action>
+		<!-- <action name="logincheckaction" class="userAction" method="logincheckaction"> 
+			定义处理结果与视图资源之间的关系 <result name="success" type="redirect">initpage.action </result> 
+			</action> -->
+	</package>
+
+	<package name="strutsjson" namespace="/" extends="json-default">
+		<!-- 本处的id就是ajax url的值，class引用了Spring 配置Action的id -->
+
+		<!-- 前台User -->
+		<action name="logincheckaction" class="userAction"
+			method="logincheckaction">
+			<!-- <result name="success" type="json">currentUser</result> -->
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="registcheckaction" class="userAction"
+			method="registcheckaction">
+			<!-- <result name="success" type="json">/index.html</result> -->
+			<result name="success">/index.html</result>
+			<result name="error">/registration.html</result>
+		</action>
+
+		<action name="queryallaction" class="userAction"
+			method="queryallaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="deleteuseraction" class="userAction"
+			method="deleteuseraction">
+			<result name="success" type="redirect">/managesystem/ms_vip.jsp</result>
+		</action>
+
+		<action name="userquerybyeneityaction" class="userAction"
+			method="userquerybyeneityaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="userloadaction" class="userAction"
+			method="userloadaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="userupdateaction" class="userAction"
+			method="userupdateaction">
+			<result name="success" type="redirect">/managesystem/ms_vip.jsp</result>
+			<result name="error">/managesystem/update/User_update.jsp</result>
+		</action>
+
+		<!-- 后台admin -->
+		<action name="backlogincheckaction" class="adminAction"
+			method="backlogincheckaction">
+			<result name="success" type="json"></result>
+			<result name="error">/managesystem/login/backlogin.jsp</result>
+		</action>
+
+		<action name="adminaddcheckaction" class="adminAction"
+			method="adminaddcheckaction">
+			<result name="success" type="redirect">/managesystem/ms_adm.jsp</result>
+			<result name="error">/managesystem/insert/admin_add.jsp</result>
+		</action>
+
+		<action name="adminqueryallaction" class="adminAction"
+			method="adminqueryallaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="admindeleteaction" class="adminAction"
+			method="admindeleteaction">
+			<result name="success" type="redirect">/managesystem/ms_adm.jsp</result>
+		</action>
+
+		<action name="adminquerybyeneityaction" class="adminAction"
+			method="adminquerybyeneityaction">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="adminloadaction" class="adminAction"
+			method="adminloadaction">
+			<result name="success" type="json"></result>
+		</action>
+		<action name="adminupdateaction" class="adminAction"
+			method="adminupdateaction">
+			<result name="success" type="redirect">/managesystem/ms_adm.jsp</result>
+			<result name="error">/managesystem/update/admin_update.jsp</result>
+		</action>
+
+		<!-- bbs_post详情 -->
+		<action name="bbspostqueryallaction" class="bbsAction"
+			method="bbspostqueryallaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="bbspostaddcheckaction" class="bbsAction"
+			method="bbspostaddcheckaction">
+			<result name="success" type="redirect">/bbs.jsp</result>
+			<result name="error">/managesystem/insert/bbs_add.jsp</result>
+		</action>
+
+		<action name="bbspostquerybyeneityaction" class="bbsAction"
+			method="bbspostquerybyeneityaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="bbspostdeleteaction" class="bbsAction"
+			method="bbspostdeleteaction">
+			<result name="success" type="redirect">/managesystem/ms_docs.jsp</result>
+		</action>
+
+		<action name="bbspostloadaction" class="bbsAction"
+			method="bbspostloadaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="bbspostupdateaction" class="bbsAction"
+			method="bbspostupdateaction">
+			<result name="success" type="redirect">/managesystem/ms_docs.jsp</result>
+			<result name="error">/managesystem/insert/admin_update.jsp</result>
+		</action>
+
+		<!-- bbs评论 -->
+		<action name="bbscommentqueryallaction" class="cmtAction"
+			method="bbscommentqueryallaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="bbscommentsaveaction" class="cmtAction"
+			method="bbscommentsaveaction">
+			<result name="success" type="redirect">/前台帖子.jsp</result>
+			<result name="error">/前台帖子.jsp</result>
+		</action>
+
+		<action name="bbscommentdeleteaction" class="cmtAction"
+			method="bbscommentdeleteaction">
+			<result name="success" type="redirect">/managesystem/ms_forum.jsp
+			</result>
+		</action>
+
+		<action name="bbscommentloadaction" class="cmtAction"
+			method="bbscommentloadaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="bbscommentupdateaction" class="cmtAction"
+			method="bbscommentupdateaction">
+			<result name="success" type="redirect">/managesystem/ms_forum.jsp
+			</result>
+			<result name="error">/managesystem/update/bbs_comment_update.jsp
+			</result>
+		</action>
+
+		<action name="bbscommentquerybyeneityaction" class="cmtAction"
+			method="bbscommentquerybyeneityaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<!-- 赛事详情 -->
+		<action name="cinfoqueryallaction" class="cinfoAction"
+			method="cinfoqueryallaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="cinfosaveaction" class="cinfoAction"
+			method="cinfosaveaction">
+			<result name="success" type="redirect">/managesystem/ms_jsxx.jsp</result>
+			<result name="error">/managesystem/insert/jsxx_add.jsp</result>
+		</action>
+
+		<action name="cinfodeleteaction" class="cinfoAction"
+			method="cinfodeleteaction">
+			<result name="success" type="redirect">/managesystem/ms_jsxx.jsp</result>
+		</action>
+
+		<action name="cinfoquerybyentityaction" class="cinfoAction"
+			method="cinfoquerybyentityaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="cinfoupdateaction" class="cinfoAction"
+			method="cinfoupdateaction">
+			<result name="success" type="redirect">/managesystem/ms_jsxx.jsp</result>
+			<result name="error">/managesystem/update/jsxx_update.jsp</result>
+		</action>
+
+		<action name="cinfoloadaction" class="cinfoAction"
+			method="cinfoloadaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="cinfoquerybytypeaction" class="cinfoAction"
+			method="cinfoquerybytypeaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<!-- 志愿信息 -->
+		<action name="volunqueryallaction" class="volunAction"
+			method="volunteerqueryallaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="voluninsertaction" class="volunAction"
+			method="volunteeraddcheckaction">
+			<result name="success" type="redirect">/managesystem/ms_volunteer.jsp
+			</result>
+			<result name="error">/managesystem/insert/volunteer_add.jsp</result>
+		</action>
+
+		<action name="volundeleteaction" class="volunAction"
+			method="volunteerdeleteaction">
+			<result name="success" type="redirect">/managesystem/ms_volunteer.jsp
+			</result>
+		</action>
+
+		<action name="volunupdateaction" class="volunAction"
+			method="volunteerupdateaction">
+			<result name="success" type="redirect">/managesystem/ms_volunteer.jsp
+			</result>
+			<result name="error">/managesystem/update/volunteer_update.jsp
+			</result>
+		</action>
+
+		<action name="volunquerybyentityaction" class="volunAction"
+			method="volunteerquerybyeneityaction">
+			<result name="success" type="json"></result>
+		</action>
+
+		<action name="volunteerloadaction" class="volunAction"
+			method="volunteerloadaction">
+			<result name="success" type="json"></result>
+		</action>
+	</package>
+
+</struts>

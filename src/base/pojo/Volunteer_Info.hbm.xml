@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-12-4 1:24:10 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="base.pojo">
+	<class name="base.pojo.Volunteer_Info" table="Volunteer_Info">
+		<id name="volunteer_id" type="int">
+			<column name="volunteer_id" />
+			<generator class="identity" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="name" />
+		</property>
+		<property name="title" type="java.lang.String">
+			<column name="title" />
+		</property>
+		<property name="summary" type="java.lang.String">
+			<column name="summary" />
+		</property>
+		<property name="img" type="java.lang.String">
+			<column name="img" />
+		</property>
+		<property name="context" type="java.lang.String">
+			<column name="context" />
+		</property>
+		<property name="tab" type="java.lang.String">
+			<column name="tab" />
+		</property>
+		<property name="creatime" type="calendar">
+			<column name="createtime" />
+		</property>
+		<property name="view_count" type="java.lang.Integer">
+			<column name="view_count" />
+		</property>
+	</class>
+</hibernate-mapping>
